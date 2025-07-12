@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="quiz-container glass">
+    <h1>🎓 Quiz Master</h1>
+    <div id="question-container">
+      <p id="question">Loading...</p>
+      <div id="answer-buttons" class="btn-grid"></div>
+    </div>
+    <div id="controls">
+      <p><strong>Score:</strong> <span id="score">0</span> | <strong>Time:</strong> <span id="timer">60 Sec</span>s</p>
+      <button id="next-btn" class="action-btn">Next</button>
+    </div>
+    <div id="result-container" class="hide">
+      <h2>Your Score: <span id="final-score"></span></h2>
+      <input type="text" id="username" placeholder="Enter your name" />
+      <button onclick="saveScore()" class="action-btn">Save Score</button>
+      <h3>🎯 All Scores:</h3>
+      <ul id="all-scores"></ul>
+      <button onclick="location.reload()" class="action-btn">Restart</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
